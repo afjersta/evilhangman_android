@@ -16,6 +16,7 @@ import java.io.InputStreamReader;
 import java.util.Set;
 
 import cs240.byu.edu.evilhangman_android.StudentPackage.IEvilHangmanGame;
+import cs240.byu.edu.evilhangman_android.StudentPackage.MyStudentEvilHangmanGameController;
 import cs240.byu.edu.evilhangman_android.StudentPackage.StudentEvilHangmanGameController;
 
 public class GamePlay extends AppCompatActivity
@@ -72,7 +73,7 @@ public class GamePlay extends AppCompatActivity
          * {link #StudentEvilHangmanGameController}
          * e.g.: studentController = new MyEvilHangmanGame();
          */
-        studentController = null;
+        studentController = new MyStudentEvilHangmanGameController();
 
         if(studentController == null)
         {
